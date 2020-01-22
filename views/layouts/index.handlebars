@@ -1,16 +1,26 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12 text-center" id="top-bar">
-            <img src="/assets/images/burger.png" alt="burger" />
+            <img src="/assets/images/burger.jpg" alt="burger" />
             <h1> Eat-Da-Burger! </h1>
         </div>
         <div class="col-md-6 text-center" class="task">
             <div class="row">
                 {{!-- Handlebars logic if not devoured --}}
+                {{#each burger_data}}
+                {{#unless this.devoured}}
+                <div class="col-md-3 text-center">
+                    <form class="devour-form button-size">
+                        <input input type="hidden" class="burger_id" type="text" value={{this.id}}>
+                    </form>
+                </div>
             </div>
         </div>
         <div class="col-md-6 text-center" class="task">
             {{!-- Handlebars logic for each burger if devoured --}}
+            {{#each burger_data}}
+            {{#if this.devoured}}
+            <input class="form-control" type="text" placeholder="{{this.id}} . {{this.burger_name}}" readonly>
         </div>
     </div>
 </div>
