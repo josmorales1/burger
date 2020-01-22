@@ -14,3 +14,4 @@ var burger = {
         orm.update("burgers", { devoured: true }, condition, cb);
     }
 }
+module.exports = burger;
