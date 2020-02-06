@@ -10,4 +10,4 @@ VALUES
 INSERT INTO burgers
     (burger_name, devoured)
 VALUES
-    ('Pizza Burger', FALSE);
+    ('With Onions Burger', FALSE);

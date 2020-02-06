@@ -1,3 +1,14 @@
+@media (min-width: 1200px) {
+  .container {
+    width: 990px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 990px;
+  }
+}
 body {
     width: 99%;
     height: 900px;
@@ -9,11 +20,6 @@ body {
   }
   
 
-  .spacing-reset {
-    padding: 0;
-    margin: 0;
-    border: 0;
-  }
   
   .list-reset {
     padding: 0;
@@ -22,17 +28,7 @@ body {
     border: 0;
   }
   
-  @media (min-width: 1200px) {
-    .container {
-      width: 990px;
-    }
-  }
-  
-  @media (min-width: 992px) {
-    .container {
-      width: 990px;
-    }
-  }
+
   h1 {
     color: black;
   }
@@ -50,22 +46,20 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
     margin: auto;
-    font-size: 38px;
+    font-size: 40px;
   }
   
   .task {
+    
     border-color: black;
     border-style: solid;
     border-width: 3px;
   }
-  
-  .button-size {
-    padding-bottom: 20px;
-  }
-  
   #text-enter-button {
     margin-top: 10px;
-    margin-bottom: 18px;
+    margin-bottom: 10px;
   }
   
-  
+  .button-size {
+    padding-bottom: 15px;
+  }
